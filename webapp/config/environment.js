@@ -43,8 +43,8 @@ module.exports = function(environment) {
       CLIENT_ID: process.env.GOOGLE_API_CLIENT_ID
     });
 
-  ENV.GOOGLE_LOGIN_ENABLED = environment === 'production';
-  ENV.DUMMY_LOGIN_ENABLED = environment !== 'production';
+  ENV.GOOGLE_LOGIN_ENABLED = true;
+  ENV.DUMMY_LOGIN_ENABLED = false;
 
   ENV.SENTRY = {
     DSN: process.env.WEBAPP_SENTRY_DSN
